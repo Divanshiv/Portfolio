@@ -1,343 +1,450 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    color: #fff;
-    overflow-x: hidden;
+  color: #fff;
+  overflow-x: hidden;
 }
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 47px;
-    padding: 20px 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    background-color: #081b29;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 47px;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background-color: #081b29;
 }
-
-
+                                               /*Navbar*/
 .logo {
-    position: relative;
-    font-size: 30px;
-    color: aqua;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 25px;
-    cursor: default;
-    opacity: 0;
-    animation: slideRight 1s ease forwards, blink 2s infinite;
+  position: relative;
+  font-size: 30px;
+  color: aqua;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 25px;
+  cursor: default;
+  opacity: 0;
+  animation: slideRight 1s ease forwards, blink 2s infinite;
 }
 @keyframes slideRight {
-    0% {
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 @keyframes blink {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
-
 
 .navbar a {
-    display: inline-block;
-    font-size: 30px;
-    color: whitesmoke;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 35px;
-    transition: 0.3s;
-    opacity: 0;
-    animation: slideTop 1s ease forwards;
+  display: inline-block;
+  font-size: 30px;
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: 0.3s;
+  opacity: 0;
+  animation: slideTop 1s ease forwards;
 }
 @keyframes slideTop {
-    0% {
-        transform: translateY(100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
-
 
 .navbar a:hover {
-    color: aqua;
+  color: aqua;
 }
+
+                                                         /* Home Section*/
 
 .Home {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: flex-start; 
-    align-items: center;
-    background: url(image1.png) no-repeat center center;
-    background-size: cover;
-    padding-top: 10px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: url(image1.png) no-repeat center center;
+  background-size: cover;
+  padding-top: 10px;
 }
 
-                                                            /* Home Section*/
-
-.home-content{
-    max-width: 600px;
-    padding-left: 80px;
-    font-size: xx-large;
+.home-content {
+  max-width: 600px;
+  padding-left: 80px;
+  font-size: xx-large;
 }
 
 .home-content h3 {
-    font-size: 30px;
-    font-weight: 700;
-    opacity: 0;
-    animation: slideBottom 1s ease forwards 0.7s;
+  font-size: 30px;
+  font-weight: 700;
+  opacity: 0;
+  animation: slideBottom 1s ease forwards 0.7s;
 }
 @keyframes slideBottom {
-    0% {
-        transform: translateY(-100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-
-.home-content h3 span{
-    color: aqua;
-}
-
-.home-content h3:nth-of-type(2){
-    margin-bottom: 25px;
-}
- 
-.home-content h1 {
-    font-size: 60px;
-    font-weight: 700;
-    margin: -3px 0;
+  0% {
+    transform: translateY(-100px);
     opacity: 0;
-    animation: slideRight 1s ease forwards 0.5s;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.home-content h3 span {
+  color: aqua;
+}
+
+.home-content h3:nth-of-type(2) {
+  margin-bottom: 25px;
+}
+
+.home-content h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: -3px 0;
+  opacity: 0;
+  animation: slideRight 1s ease forwards 0.5s;
 }
 @keyframes slideRight {
-    0% {
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
-
-.home-content p{
-    font-size: 20px;
-    opacity: 0;
-    animation: slideLeft 1s ease forwards 0.5s;
+.home-content p {
+  font-size: 20px;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards 0.5s;
 }
 @keyframes slideLeft {
-    0% {
-        transform: translateX(100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .home-sci a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    background: transparent;
-    border: 2px solid aqua;
-    border-radius: 50%;
-    font-size: 20px;
-    color: aqua;
-    text-decoration: none;
-    margin: 30px 15px 30px 0;
-    opacity: 0;
-    animation: slideRight 1s ease forwards;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid aqua;
+  border-radius: 50%;
+  font-size: 20px;
+  color: aqua;
+  text-decoration: none;
+  margin: 30px 15px 30px 0;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
 }
 
 .home-sci a:hover {
-    background: aqua;
-    color: #fff;
-    transform: scale(1.1);
-    transition: 0.3s ease;
+  background: aqua;
+  color: #fff;
+  transform: scale(1.1);
+  transition: 0.3s ease;
 }
 .home-sci a:nth-child(1) {
-    animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 .home-sci a:nth-child(2) {
-    animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 .home-sci a:nth-child(3) {
-    animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 .home-sci a:nth-child(4) {
-    animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 .home-sci a:nth-child(5) {
-    animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 @keyframes slideRight {
-    0% {
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .btn-box {
-    display: inline-block;
-    padding: 12px 30px;
-    background: aqua;
-    border-radius: 40px;
-    font-size: 18px;
-    color: #081b29;
-    letter-spacing: 2px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s ease;
-    opacity: 0;
-    animation: slideTop 1s ease forwards;
+  display: inline-block;
+  padding: 12px 30px;
+  margin-top: 70px;
+  background: aqua;
+  border-radius: 40px;
+  font-size: 18px;
+  color: #081b29;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+  opacity: 0;
+  animation: slideTop 1s ease forwards;
 }
 
 @keyframes slideTop {
-    0% {
-        transform: translateY(100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .btn-box:hover {
-    box-shadow: 0 0 5px aqua,
-                0 0 25px aqua, 
-                0 0 50px aqua,
-                0 0 100px aqua;
-    transition: box-shadow 0.3s ease;
+  box-shadow: 0 0 5px aqua, 0 0 25px aqua, 0 0 50px aqua, 0 0 100px aqua;
+  transition: box-shadow 0.3s ease;
 }
 
-
-                                                                    /*About Section*/
+                                                          /*About Section*/
 
 .About {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: flex-end; 
-    align-items: center; 
-    background: url(image2.avif) no-repeat center center;
-    background-size: cover;
-    padding-right: 80px; 
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: url(image2.avif) no-repeat center center;
+  background-size: cover;
+  padding-right: 80px;
 }
 
 .About-Content {
-    max-width: 600px;
-    font-size: xx-large; 
+  max-width: 600px;
+  font-size: xx-large;
 }
 
 .About-Content h2 {
-    font-size: 60px;
-    font-weight: 700;
-    margin: -3px 0 10px 70px;
-    opacity: 0;
-    animation: slideRight 1s ease forwards 0.5s;
-    position: relative;
-    left: calc(50% - 300px);
-    transform: translateX(-50%);
+  font-size: 60px;
+  font-weight: 700;
+  margin: -3px 0 10px 70px;
+  opacity: 0;
+  animation: slideRight 1s ease forwards 0.5s;
+  position: relative;
+  left: calc(50% - 300px);
+  transform: translateX(-50%);
 }
-.About-Content h2 span{
-    color: aqua;
+.About-Content h2 span {
+  color: aqua;
 }
-.About-Content h4 span{
-    color: aqua;
+.About-Content h4 span {
+  color: aqua;
 }
 
 .About-Content h4 {
-    font-size: 30px;
-    padding: 0px 10px 20px;
-    font-weight: 700;
-    opacity: 0;
-    animation: slideBottom 1s ease forwards 0.7s;
+  font-size: 30px;
+  padding: 0px 10px 20px;
+  font-weight: 700;
+  opacity: 0;
+  animation: slideBottom 1s ease forwards 0.7s;
 }
 @keyframes slideBottom {
-    0% {
-        transform: translateY(-100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .About-Content p {
-    font-size: 20px;
-    opacity: 0;
-    animation: slideLeft 1s ease forwards 0.5s;
-    margin-bottom: 20px;
+  font-size: 20px;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards 0.5s;
+  margin-bottom: 20px;
 }
 @keyframes slideLeft {
-    0% {
-        transform: translateX(100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 @keyframes slideRight {
-    0% {
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
+/* Skills Section */
+.skills {
+  width: 100%;
+  height: 100vh;
+  background: url(Image3.avif) no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  align-items: center;
+  padding-top: 150px;
+}
 
-.Skill {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content:flex-start; 
-    align-items: center; 
-    background: url(Image3.avif) no-repeat center center;
-    background-size: cover;
-    padding-right: 80px; 
+.skills h2 {
+  font-size: 48px;
+  margin-bottom: 40px;
+  opacity: 0;
+  animation: slideBottom 1s ease forwards;
+}
+@keyframes slideBottom {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.skills h2 span {
+  color: aqua;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+                                                          /* Technical Skills */
+.technical-skills {
+  width: 45%;
+}
+
+.technical-skills h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid aqua;
+  padding-bottom: 10px;
+}
+
+.skill-item {
+  margin-bottom: 20px;
+}
+
+.skill-item label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.progress-bar {
+  background-color: #333;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  height: 20px;
+}
+
+.progress {
+  background-color: aqua;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.progress-bar span {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #000;
+}
+
+                                                          /* Professional Skills */
+.professional-skills {
+  width: 45%;
+}
+
+.professional-skills h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid aqua;
+  padding-bottom: 10px;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.circle-item {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border: 6px solid aqua;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  position: relative;
+}
+
+.circle-item label {
+  margin-top: 10px;
+  font-size: 18px;
 }
