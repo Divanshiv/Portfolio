@@ -23,7 +23,8 @@ body {
   z-index: 100;
   background-color: #081b29;
 }
-                                               /*Navbar*/
+
+/*Navbar*/
 .logo {
   position: relative;
   font-size: 30px;
@@ -81,7 +82,7 @@ body {
   color: aqua;
 }
 
-                                                         /* Home Section*/
+/* Home Section*/
 
 .Home {
   position: relative;
@@ -90,7 +91,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background: url(image1.png) no-repeat center center;
+  background: url(Assets/image1.png) no-repeat center center;
   background-size: cover;
   padding-top: 10px;
 }
@@ -241,7 +242,7 @@ body {
   transition: box-shadow 0.3s ease;
 }
 
-                                                          /*About Section*/
+/*About Section*/
 
 .About {
   position: relative;
@@ -250,7 +251,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background: url(image2.avif) no-repeat center center;
+  background: url(Assets/image2.avif) no-repeat center center;
   background-size: cover;
   padding-right: 80px;
 }
@@ -326,7 +327,7 @@ body {
 .skills {
   width: 100%;
   height: 100vh;
-  background: url(Image3.avif) no-repeat center center;
+  background: url(Assets/Image3.avif) no-repeat center center;
   background-size: cover;
   text-align: center;
   color: #fff;
@@ -364,7 +365,7 @@ body {
   margin: 0 auto;
 }
 
-                                                          /* Technical Skills */
+/* Technical Skills */
 .technical-skills {
   width: 45%;
 }
@@ -406,10 +407,10 @@ body {
   top: 50%;
   transform: translateY(-50%);
   font-size: 16px;
-  color: #000;
+  color: #fff;
 }
 
-                                                          /* Professional Skills */
+/* Professional Skills */
 .professional-skills {
   width: 45%;
 }
@@ -447,4 +448,65 @@ body {
 .circle-item label {
   margin-top: 10px;
   font-size: 18px;
+}
+
+.Contact {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  background: url(Assets/image4.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 0 20px; 
+}
+
+.Contact-content {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.Contact-content h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.Contact-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: first baseline;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px; 
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  flex: 1;
+  text-align: right;
+}
+
+.form-group input,
+.form-group textarea {
+  flex: 2;
+  padding: 10px;
+}
+
+.Contact-content button {
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-box {
+  display: inline-block;
+  margin-top: 20px;
 }

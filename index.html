@@ -30,7 +30,7 @@
         <h1>Divanshiv Kumar</h1>
         <h3>And I'm a <span class="text"></span></h3>
         <p>
-          With over a year of experience, <br />And expertise in front-end
+          With 2+ year of experience, <br />And expertise in front-end
           development and many more.
         </p>
         <div class="home-sci">
@@ -140,9 +140,36 @@
             </div>
           </div>
         </div>
-        <a href="#" class="btn-box">To My Projects...</a>
+        <a href="#" class="btn-box">To Contact Me...</a>
       </div>
     </section>
+
+    <!--Contact Page-->
+
+    <section id="Contact" class="Contact">
+      <div class="Contact-content">
+          <h2>Contact <span>Me</span></h2>
+          <form action="submit_contact.php" method="POST">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+  
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+  
+              <label for="subject">Subject:</label>
+              <input type="text" id="subject" name="subject" required>
+  
+              <label for="phone_number">Phone Number:</label>
+              <input type="number" id="phone_number" name="phone_number" required>
+  
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+  
+              <button type="submit">Submit</button>
+          </form>
+      </div>
+  </section>
+  
 
     <script src="script.js"></script>
   </body>
