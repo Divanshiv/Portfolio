@@ -1,0 +1,13 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 3000" width="3000" height="3000">
+	<title>DK Monogram Logo Dark</title>
+	<style>
+		.s0 { fill: #ffffff } 
+		.s1 { fill: #ffa500 } 
+	</style>
+	<g id="Layer 1">
+		<!-- D letter - white -->
+		<path id="D" class="s0" d="m900 1800h-200v-600h200c165 0 300 135 300 300 0 165-135 300-300 300zm0-500h-100v400h100c110 0 200-90 200-200 0-110-90-200-200-200z"/>
+		<!-- K letter - orange -->
+		<path id="K" class="s1" d="m1300 1200h100v600h-100v-250l-200 250h-120l250-300-250-300h120l200 200z"/>
+	</g>
+</svg>
