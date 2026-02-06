@@ -75,58 +75,28 @@
 
 @media screen and (max-width: 768px) {
   .resume__container {
-    max-width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
   }
 
   .tabs {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .tab__list {
-    display: flex;
-    overflow-x: auto;
-    width: 100%;
-    margin-bottom: 2rem;
-    padding-bottom: 5px;
+    width: 100vw;
+    margin-bottom: 1.25rem;
   }
 
-  .tab__list::-webkit-scrollbar {
-    height: 5px;
-  }
-
-  .tab__list::-webkit-scrollbar-thumb {
-    background-color: var(--first-color);
-    border-radius: 10px;
-  }
-
-  .tab {
-    flex: 0 0 auto;
-    margin-right: 0.5rem;
-  }
-
-  .button {
-    text-align: center;
-    padding: 0.75rem 1.25rem;
-    white-space: nowrap;
-    border-radius: var(--border-radius) !important;
+  .tab__panel:first-of-type.is-active,
+  .tab__panel:last-child.is-active {
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
   }
 
   .tab.is-active .button {
-    border-radius: var(--border-radius) !important;
-  }
-
-  .tab__panel {
-    padding: 1.5rem 1rem;
-  }
-
-  .tab__panel-title {
-    font-size: var(--normal-font-size);
-  }
-
-  .tab__panel-list li {
-    padding-left: 15px;
-    font-size: 0.9rem;
-    line-height: 1.4;
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
   }
 }
 
