@@ -35,39 +35,19 @@ const Certifications = () => {
 
                 <div className="certifications__card">
                     <div className="certifications__thumb">
-                        <div><span className="certifications__category">Professional Certificate</span></div>
+                        <div><span className="certifications__category">Technical Certifications</span></div>
                         <div><img src={Image2} alt="" className='certifications__img' /></div>
                     </div>
                     <div className="certifications__details">
                         <h3 className="certifications__title">
-                            Certification Title
+                            Django
                         </h3>
                         <div className="certifications__meta">
-                            <span>Month, Year</span>
+                            <span>August, 2024</span>
                             <span className="certifications__dot">.</span>
-                            <span>Issuing Organization</span>
+                            <span>GeekforGeeks</span>
                         </div>
-                        <a href="#contact" className="certifications__button">
-                            Check out <RiExternalLinkLine className="certifications__button-icon" />
-                        </a>
-                    </div>
-                </div>
-
-                <div className="certifications__card">
-                    <div className="certifications__thumb">
-                        <div><span className="certifications__category">Specialization</span></div>
-                        <div><img src={Image3} alt="" className='certifications__img' /></div>
-                    </div>
-                    <div className="certifications__details">
-                        <h3 className="certifications__title">
-                            Certification Title
-                        </h3>
-                        <div className="certifications__meta">
-                            <span>Month, Year</span>
-                            <span className="certifications__dot">.</span>
-                            <span>Issuing Organization</span>
-                        </div>
-                        <a href="#contact" className="certifications__button">
+                        <a href="https://media.geeksforgeeks.org/courses/certificates/1cc9b1d4fec962e5a0b094e1e328e11c.pdf" className="certifications__button">
                             Check out <RiExternalLinkLine className="certifications__button-icon" />
                         </a>
                     </div>
