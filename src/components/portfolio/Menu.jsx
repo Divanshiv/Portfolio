@@ -2,6 +2,7 @@ import Work1 from "../../assets/native-jobs.png";
 import Work2 from "../../assets/cryptoverse.png";
 import Work3 from "../../assets/travel.png";
 import Work4 from "../../assets/blog-1.svg";
+import Work5 from "../../assets/blog-2.svg";
 
 const Menu = [
 	{
@@ -33,6 +34,14 @@ const Menu = [
 		title: "Travel App Backend",
 		category: ["Backend"],
 		url: "",
+		repositoryUrl: ""
+	},
+	{
+		id: 5,
+		image: Work5,
+		title: "Trip-tastic",
+		category: ["Full Stack"],
+		url: "https://trip-tastic-sooty.vercel.app/",
 		repositoryUrl: ""
 	}
 ];

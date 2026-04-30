@@ -20,23 +20,25 @@ const About = () => {
                 <div className="about__data grid">
                     <div className="about__info">
                         <p className="about__description">
-                            Hello! I'm Divanshiv Kumar, a passionate Frontend Developer based in Delhi/NCR, India. I graduated with a BCA (First Division Honors) from DAV Centenary College, Maharishi Dayanand University, where I built a strong foundation in programming and web technologies.<br /><br />
-                            Fast forward to today, it's been an exciting journey of learning, building, and growing. I enjoy turning ideas into interactive, user-friendly web experiences and constantly pushing myself to learn new technologies. My current focus is on expanding my portfolio by building real-world projects, improving performance and UI/UX, and growing as a reliable team player who enjoys collaboration and problem-solving.<br /><br />
+                            Hello! I'm Divanshiv Kumar, a passionate Full Stack Developer based in Delhi/NCR, India. I graduated with a BCA (First Division Honors) from DAV Centenary College, Maharishi Dayanand University, where I built a strong foundation in programming and web technologies.<br /><br />
+                            With professional experience spanning Laravel, React.js, Node.js, and MongoDB, I've worked on full-stack projects ranging from cab booking platforms to AI model training. I enjoy turning ideas into interactive, user-friendly web experiences and constantly pushing myself to learn new technologies. My current focus is on building scalable backend systems, improving performance and UI/UX, and growing as a reliable team player who enjoys collaboration and problem-solving.<br /><br />
                             Here are a few technologies I've been working with recently:
                         </p>
                         <ul className="about__list">
                             <li>JavaScript (ES6+)</li>
                             <li>React.js</li>
+                            <li>PHP (Laravel)</li>
                             <li>Tailwind CSS</li>
                             <li>Node.js</li>
                             <li>Express.js</li>
                             <li>MongoDB</li>
+                            <li>MySQL</li>
                             <li>Python</li>
                         </ul>
                         <p className="about__description">
                             I'm always curious about new tools, frameworks, and ideas—and I love building things that people actually enjoy using.
                         </p>
-                        <button className="btn" onClick={downloadResume}>Donwload CV</button>
+                        <button className="btn" onClick={downloadResume}>Download CV</button>
                     </div>
                 </div>
             </div>
